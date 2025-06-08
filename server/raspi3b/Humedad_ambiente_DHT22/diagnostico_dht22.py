@@ -444,7 +444,7 @@ def main():
     print()
 
     # Configuracion
-    SENSOR_PIN = 15  # Cambiar segun tu configuracion
+    SENSOR_PIN = 4  # Cambiar segun tu configuracion
 
     print(f"Configuracion:")
     print(f"- Pin GPIO: {SENSOR_PIN}")
