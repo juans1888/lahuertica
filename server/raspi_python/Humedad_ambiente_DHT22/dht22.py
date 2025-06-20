@@ -38,7 +38,7 @@ def read_dht22(pin):
     data = []
     
     try:
-        # Se�al de inicio
+        # Seï¿½al de inicio
         GPIO.output(pin, GPIO.LOW)
         time.sleep(0.02)  # 20ms
         GPIO.output(pin, GPIO.HIGH)
@@ -67,7 +67,7 @@ def read_dht22(pin):
                 if time.time() > timeout:
                     return None, None
             
-            # Medir duraci�n del pulso alto
+            # Medir duraciï¿½n del pulso alto
             start_time = time.time()
             while GPIO.input(pin) == GPIO.HIGH:
                 if time.time() > timeout:
@@ -118,7 +118,7 @@ def main():
     Funcion principal - Lee y muestra datos del sensor DHT22
     """
     # Pin GPIO donde esta conectado el sensor (cambiar segun tu conexion)
-    SENSOR_PIN = 4
+    SENSOR_PIN = 17
     
     print("Sensor DHT22 - La Huertica")
     print("=" * 40)
